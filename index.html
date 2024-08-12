@@ -21,8 +21,8 @@
   <section class="form-section">
     <h3>Need Help? Of Course, You Do.</h3>
     <form id="webhook-form">
-      <label for="url">Startup URL (Yes, the one you should have memorized by now):</label>
-      <input type="text" id="url" name="url" placeholder="Enter your startup's website URL">
+      <label for="url">Startup URL:</label>
+      <input type="text" id="url" name="url" placeholder="Enter your startup's website URL (include https://www.....">
       
       <label for="name">The Startup Name:</label>
       <input type="text" id="name" name="name" placeholder="Enter your name">
@@ -72,7 +72,7 @@
         }
       })
       .then((response) => {
-        responseDiv.innerText = `Response: ${response} (Yes, that just happened)`;
+        responseDiv.innerText = `Response: ${response} (Yes, that just happened. Anyway, my job scraper and auto apply tools may come in use - contact me for access! :) )`;
       })
       .catch((error) => {
         responseDiv.innerText = `Error: ${error.message}. Oops, we did it again.`;
