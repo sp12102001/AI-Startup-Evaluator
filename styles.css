@@ -1,54 +1,64 @@
 /* Basic styling for the body */
 body {
   font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-  background-color: #eef2f7;
+  background-color: #f5f7fa;
   margin: 0;
-  padding: 20px;
+  padding: 0;
   display: flex;
   justify-content: center;
   align-items: center;
+  flex-direction: column;
   min-height: 100vh;
 }
 
 /* Styling for the h1 heading */
 h1 {
-  color: #2c3e50;
+  color: #2d3a4a;
+  font-weight: 700;
   text-align: center;
-  margin-bottom: 20px;
+  margin-bottom: 30px;
+  letter-spacing: 1px;
+  max-width: 600px;
+  line-height: 1.4;
+  padding: 0 20px;
 }
 
 /* Styling the form container */
 form {
   background-color: #ffffff;
   padding: 30px;
-  border-radius: 8px;
-  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
+  border-radius: 10px;
+  box-shadow: 0 10px 25px rgba(0, 0, 0, 0.1);
   max-width: 400px;
   width: 100%;
+  border: 1px solid #e3e9f0;
 }
 
 /* Label styling */
 label {
   display: block;
-  margin-bottom: 10px;
+  margin-bottom: 8px;
   font-weight: 600;
-  color: #34495e;
+  color: #4a5a6a;
+  font-size: 14px;
 }
 
 /* Input field styling */
 input[type="text"] {
   width: 100%;
-  padding: 12px;
+  padding: 14px;
   margin-bottom: 20px;
-  border: 1px solid #bdc3c7;
-  border-radius: 4px;
-  font-size: 16px;
-  transition: border-color 0.3s ease-in-out;
+  border: 1px solid #d1d8e0;
+  border-radius: 5px;
+  font-size: 15px;
+  background-color: #f9fbfd;
+  transition: all 0.3s ease;
 }
 
 /* Input field focus effect */
 input[type="text"]:focus {
-  border-color: #2980b9;
+  border-color: #3498db;
+  background-color: #fff;
   outline: none;
 }
 
@@ -56,27 +66,33 @@ input[type="text"]:focus {
 button[type="submit"] {
   background-color: #3498db;
   color: white;
-  padding: 12px 20px;
+  padding: 14px;
   border: none;
-  border-radius: 4px;
-  font-size: 16px;
+  border-radius: 5px;
+  font-size: 15px;
+  font-weight: 600;
   cursor: pointer;
-  transition: background-color 0.3s ease-in-out;
+  transition: all 0.3s ease;
   width: 100%;
+  text-transform: uppercase;
+  letter-spacing: 1px;
 }
 
 /* Button hover effect */
 button[type="submit"]:hover {
-  background-color: #2980b9;
+  background-color: #2a80b9;
 }
 
 /* Response div styling */
 #response {
   margin-top: 20px;
   padding: 15px;
-  background-color: #ecf0f1;
-  border-left: 6px solid #3498db;
-  border-radius: 4px;
-  color: #2c3e50;
+  background-color: #f1f7fc;
+  border-left: 4px solid #3498db;
+  border-radius: 5px;
+  color: #2d3a4a;
   font-size: 14px;
+  font-weight: 500;
+  max-width: 400px;
+  width: 100%;
 }
