@@ -1,40 +1,77 @@
 /* Basic styling for the body */
 body {
   font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-  background-color: #f5f7fa;
+  background-color: #f9fafc;
   margin: 0;
-  padding: 0;
+  padding: 20px;
   display: flex;
-  justify-content: center;
-  align-items: center;
   flex-direction: column;
-  min-height: 100vh;
+  align-items: center;
+  color: #34495e;
 }
 
-/* Styling for the h1 heading */
-h1 {
-  color: #2d3a4a;
-  font-weight: 700;
+/* Header and main title styling */
+header {
   text-align: center;
-  margin-bottom: 30px;
-  letter-spacing: 1px;
-  max-width: 600px;
-  line-height: 1.4;
-  padding: 0 20px;
+  margin-bottom: 40px;
 }
 
-/* Styling the form container */
-form {
+header h1 {
+  color: #2c3e50;
+  font-size: 36px;
+  font-weight: 700;
+}
+
+header h2 {
+  color: #e74c3c;
+  font-size: 24px;
+  margin: 10px 0;
+  font-weight: 600;
+}
+
+header p {
+  font-size: 16px;
+  max-width: 600px;
+  line-height: 1.5;
+}
+
+/* Consultant lore section styling */
+.consultant-lore {
+  background-color: #ecf0f1;
+  padding: 20px;
+  border-radius: 10px;
+  max-width: 600px;
+  margin-bottom: 40px;
+}
+
+.consultant-lore h3 {
+  color: #2980b9;
+  font-size: 20px;
+  margin-bottom: 10px;
+}
+
+.consultant-lore p {
+  font-size: 15px;
+  line-height: 1.6;
+}
+
+/* Form section styling */
+.form-section {
   background-color: #ffffff;
   padding: 30px;
   border-radius: 10px;
   box-shadow: 0 10px 25px rgba(0, 0, 0, 0.1);
   max-width: 400px;
   width: 100%;
-  border: 1px solid #e3e9f0;
+  margin-bottom: 40px;
 }
 
-/* Label styling */
+.form-section h3 {
+  color: #2c3e50;
+  font-size: 20px;
+  margin-bottom: 20px;
+}
+
 label {
   display: block;
   margin-bottom: 8px;
@@ -43,7 +80,6 @@ label {
   font-size: 14px;
 }
 
-/* Input field styling */
 input[type="text"] {
   width: 100%;
   padding: 14px;
@@ -55,14 +91,12 @@ input[type="text"] {
   transition: all 0.3s ease;
 }
 
-/* Input field focus effect */
 input[type="text"]:focus {
-  border-color: #3498db;
+  border-color: #2980b9;
   background-color: #fff;
   outline: none;
 }
 
-/* Button styling */
 button[type="submit"] {
   background-color: #3498db;
   color: white;
@@ -78,12 +112,10 @@ button[type="submit"] {
   letter-spacing: 1px;
 }
 
-/* Button hover effect */
 button[type="submit"]:hover {
   background-color: #2a80b9;
 }
 
-/* Response div styling */
 #response {
   margin-top: 20px;
   padding: 15px;
@@ -95,4 +127,25 @@ button[type="submit"]:hover {
   font-weight: 500;
   max-width: 400px;
   width: 100%;
+  text-align: center;
+}
+
+/* Footer styling */
+footer {
+  margin-top: 40px;
+  text-align: center;
+  font-size: 14px;
+}
+
+footer p {
+  color: #7f8c8d;
+}
+
+footer a {
+  color: #3498db;
+  text-decoration: none;
+}
+
+footer a:hover {
+  text-decoration: underline;
 }
