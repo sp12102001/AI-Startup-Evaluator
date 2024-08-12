@@ -1,20 +1,41 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
 <head>
-  <title>VentureCommunist</title>  
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>VentureCommunist | AI Venture Scout Assistant</title>  
   <link rel="stylesheet" href="styles.css">
 </head>
 <body>
-  <h1>AI Should Taking Over YOUR Job, and I'm glad to be part of that movement</h1>
-  <form id="webhook-form">
-    <label for="url">URL:</label>
-    <input type="text" id="url" name="url"><br><br>
-    <label for="name">Name:</label>
-    <input type="text" id="name" name="name"><br><br>
-    <button type="submit">Send</button>
-  </form>
+  <header>
+    <h1>Welcome to VentureCommunist</h1>
+    <h2>Empowering AI Venture Scouts, Because You Clearly Need It</h2>
+    <p>Let’s be honest—navigating the AI startup world is hard, and we both know you could use a little help. Good thing we're here to guide you, or maybe just do it for you. Either way, welcome aboard!</p>
+  </header>
 
-  <div id="response"></div>
+  <section class="consultant-lore">
+    <h3>Why AI Should Take Over Your Job (Seriously, It’s Better This Way)</h3>
+    <p>Here at VentureCommunist, we’re all about innovation, efficiency, and making sure you don’t have to lift a finger. Our AI is ready to take over the tedious stuff, and honestly, it's probably better at it than you are. But don’t worry, we’ll find something else for you to do—maybe.</p>
+  </section>
+
+  <section class="form-section">
+    <h3>Need Help? Of Course, You Do.</h3>
+    <form id="webhook-form">
+      <label for="url">Startup URL (Yes, the one you should have memorized by now):</label>
+      <input type="text" id="url" name="url" placeholder="Enter your startup's website URL">
+      
+      <label for="name">Your Name (In case you forgot):</label>
+      <input type="text" id="name" name="name" placeholder="Enter your name">
+      
+      <button type="submit">Send to Webhook (We promise it’ll only hurt a little)</button>
+    </form>
+
+    <div id="response">Waiting for your submission... We’re not going anywhere, but you should hurry.</div>
+  </section>
+
+  <footer>
+    <p>Powered by <a href="https://www.venturecommunist.com" target="_blank">VentureCommunist</a>. Join us—because the machines are already winning.</p>
+  </footer>
 
   <script>
     const form = document.getElementById('webhook-form');
@@ -27,9 +48,11 @@
       const nameInput = document.getElementById('name');
 
       if (!urlInput.value || !nameInput.value) {
-        responseDiv.innerText = 'Please fill in both fields';
+        responseDiv.innerText = 'Seriously, just fill in both fields. It’s not that hard.';
         return;
       }
+
+      responseDiv.innerText = 'Submitting your data... Don’t worry, it’ll only take a second (or two).';
 
       const url = encodeURIComponent(urlInput.value);
       const name = encodeURIComponent(nameInput.value);
@@ -49,10 +72,10 @@
         }
       })
       .then((response) => {
-        responseDiv.innerText = `Response: ${response}`;
+        responseDiv.innerText = `Response: ${response} (Yes, that just happened)`;
       })
       .catch((error) => {
-        responseDiv.innerText = `Error: ${error.message}`;
+        responseDiv.innerText = `Error: ${error.message}. Oops, we did it again.`;
       });
     });
   </script>
